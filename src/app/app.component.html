@@ -1,7 +1,6 @@
 <button (click)="generateData()"> generate data </button>
-
 <ul>
-  <li *PFor="let item of data; chunkLength: 5; renderTimeout: 1000">
+  <li *PFor="let item of data; chunkLength: 10; renderTimeout: 1000">
     {{item.id}} - {{item.content}}
   </li>
 </ul>
